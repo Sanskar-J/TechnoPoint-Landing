@@ -10,7 +10,8 @@ import Gallery from "./components/gallery";
  */ import Contact from "./components/contact";
 import JsonData from "./data/data.json";
 import Map from "./components/map";
-import { SliderData } from './components/SliderData';
+import { GlobalStyle } from "./global.styles";
+import { SliderData } from "./components/SliderData";
 
 export class App extends Component {
   state = {
@@ -27,13 +28,14 @@ export class App extends Component {
   render() {
     return (
       <div>
+        <GlobalStyle />
         <Navigation />
         <Header data={this.state.landingPageData.Header} />
         <Services data={this.state.landingPageData.Services} />
         {/* <Features data={this.state.landingPageData.Features} /> */}
         {/*   <About data={this.state.landingPageData.About} />
          */}
-         <Map slides={SliderData}/>
+        <Map slides={SliderData} />
         <Gallery />
         {/*  <Testimonials data={this.state.landingPageData.Testimonials} /> */}
         {/*         <Team data={this.state.landingPageData.Team} />

@@ -58,6 +58,11 @@ export class Navigation extends Component {
                 </a>
               </li> */}
               <li>
+                <a href="#maps" className="page-scroll">
+                  Maps
+                </a>
+              </li>
+              <li>
                 <a href="#portfolio" className="page-scroll">
                   Gallery
                 </a>
@@ -67,11 +72,7 @@ export class Navigation extends Component {
                   Testimonials
                 </a>
               </li> */}
-              <li>
-                <a href="#maps" className="page-scroll">
-                  Maps
-                </a>
-              </li>
+
               <li>
                 <a href="#contact" className="page-scroll">
                   Contact
